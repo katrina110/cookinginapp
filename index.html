@@ -1,516 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>iUlam</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iUlam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Red+Hat+Display:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar navbar-home">
+      <div class="container">
+        <div class="row">
+          <div class="col s9">
+            <div class="content-left">
+              <div class="images">
+                <img src="images/profile5.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h4>Hello, Welcome</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="content-right">
+              <a href="notifications.html"
+                ><ion-icon name="notifications"></ion-icon
+              ></a>
+              <a href="#" data-target="slide-out" class="sidenav-trigger"
+                ><ion-icon name="grid-outline"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-title-big">
+          <h2>What do you want to cook today?</h2>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
 
-	<!-- navbar -->
-	<div class="navbar navbar-home">
-		<div class="container">
-			<div class="row">
-				<div class="col s9">
-					<div class="content-left">
-						<div class="images">
-							<img src="images/profile5.jpg" alt="">
-						</div>
-						<div class="text">
-							<h4>Hello, Welcome</h4>
-						</div>
-					</div>
-				</div>
-				<div class="col s3">
-					<div class="content-right">
-						<a href="notifications.html"><ion-icon name="notifications"></ion-icon></a>
-						<a href="#" data-target="slide-out" class="sidenav-trigger"><ion-icon name="grid-outline"></ion-icon></a>
-					</div>
-				</div>
-			</div>
-			<div class="navbar-title-big">
-				<h2>What do you want to cook today?</h2>
-			</div>
-		</div>
-	</div>
-	<!-- end navbar -->
+    <!-- sidenav -->
+    <div id="slide-out" class="sidenav sidebar-panel-1">
+      <div class="container">
+        <div class="spacer-block"></div>
+        <div class="sidebar-header">
+          <img src="images/profile5.jpg" alt="" />
+        </div>
+        <div class="spacer-block"></div>
+        <form>
+          <input type="text" placeholder="Search recipe" />
+        </form>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><ion-icon name="home-outline"></ion-icon>Home</a
+            >
+          </li>
+          <li>
+            <a href="searchbar.html"
+              ><ion-icon name="search-outline"></ion-icon>Searh</a
+            >
+          </li>
+          <li>
+            <a href="add-recipe.html"
+              ><ion-icon name="add-circle-outline"></ion-icon>Add Recipe</a
+            >
+          </li>
+          <li>
+            <a href="saved-recipe.html"
+              ><ion-icon name="bookmark-outline"></ion-icon>Saved Recipe</a
+            >
+          </li>
+          <li>
+            <a href="profile.html"
+              ><ion-icon name="person-outline"></ion-icon>Profile</a
+            >
+          </li>
+          <li>
+            <a href="#" data-target="slide-in" class="sidenav-trigger"
+              ><ion-icon name="layers-outline"></ion-icon>Other Pages</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sidenav -->
 
-	<!-- sidenav -->
-	<div id="slide-out" class="sidenav sidebar-panel-1">
-		<div class="container">
-			<div class="spacer-block"></div>
-			<div class="sidebar-header">
-				<img src="images/profile5.jpg" alt="">
-			</div>
-			<div class="spacer-block"></div>
-			<form>
-				<input type="text" placeholder="Search recipe">
-			</form>
-			<ul>
-				<li><a href="index.html"><ion-icon name="home-outline"></ion-icon>Home</a></li>
-				<li><a href="searchbar.html"><ion-icon name="search-outline"></ion-icon>Searh</a></li>
-				<li><a href="add-recipe.html"><ion-icon name="add-circle-outline"></ion-icon>Add Recipe</a></li>
-				<li><a href="saved-recipe.html"><ion-icon name="bookmark-outline"></ion-icon>Saved Recipe</a></li>
-				<li><a href="profile.html"><ion-icon name="person-outline"></ion-icon>Profile</a></li>
-				<li><a href="#" data-target="slide-in" class="sidenav-trigger"><ion-icon name="layers-outline"></ion-icon>Other Pages</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- end sidenav -->
+    <!-- sidenav -->
+    <div id="slide-in" class="sidenav sidebar-panel-2">
+      <div class="container">
+        <div class="spacer-block"></div>
+        <ul>
+          <li>
+            <a href="recipe-list.html"
+              ><ion-icon name="restaurant-outline"></ion-icon>Recipes</a
+            >
+          </li>
+          <li>
+            <a href="recipe-details.html"
+              ><ion-icon name="document-text-outline"></ion-icon>Recipe
+              Details</a
+            >
+          </li>
+          <li>
+            <a href="notifications.html"
+              ><ion-icon name="notifications"></ion-icon>Notifications</a
+            >
+          </li>
+          <li>
+            <a href="pricing-table.html"
+              ><ion-icon name="card-outline"></ion-icon>Pricing Table</a
+            >
+          </li>
+          <li>
+            <a href="edit-profile.html"
+              ><ion-icon name="create-outline"></ion-icon>Edit Profile</a
+            >
+          </li>
+          <li>
+            <a href="login.html"
+              ><ion-icon name="log-in-outline"></ion-icon>Login</a
+            >
+          </li>
+          <li>
+            <a href="sign-up.html"
+              ><ion-icon name="person-add-outline"></ion-icon>Sign Up</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end sidenav -->
 
-	<!-- sidenav -->                                
-	<div id="slide-in" class="sidenav sidebar-panel-2">
-		<div class="container">
-			<div class="spacer-block"></div>
-			<ul>
-				<li><a href="recipe-list.html"><ion-icon name="restaurant-outline"></ion-icon>Recipes</a></li>
-				<li><a href="recipe-details.html"><ion-icon name="document-text-outline"></ion-icon>Recipe Details</a></li>
-				<li><a href="notifications.html"><ion-icon name="notifications"></ion-icon>Notifications</a></li>
-				<li><a href="pricing-table.html"><ion-icon name="card-outline"></ion-icon>Pricing Table</a></li>
-				<li><a href="edit-profile.html"><ion-icon name="create-outline"></ion-icon>Edit Profile</a></li>
-				<li><a href="login.html"><ion-icon name="log-in-outline"></ion-icon>Login</a></li>
-				<li><a href="sign-up.html"><ion-icon name="person-add-outline"></ion-icon>Sign Up</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- end sidenav -->
+    <!-- popular recipe -->
+    <div class="popular-recipe">
+      <div class="container">
+        <div class="swiper swiper-home">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <div class="image-mask"></div>
+                  <img src="images/porkadobo.jpg" alt="" />
+                  <div class="recipe-caption">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="heart"></ion-icon>10K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title title-white">
+                      Grilled Meat With Sauce
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <div class="image-mask"></div>
+                  <img src="images/atevella.jpg" alt="" />
+                  <div class="recipe-caption">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="heart"></ion-icon>10K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title title-white">Ate Vella</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <div class="image-mask"></div>
+                  <img src="images/popular-recipe2.jpg" alt="" />
+                  <div class="recipe-caption">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="heart"></ion-icon>10K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title title-white">
+                      Crispy Chicken Thighs
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <div class="image-mask"></div>
+                  <img src="images/popular-recipe3.jpg" alt="" />
+                  <div class="recipe-caption">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="heart"></ion-icon>10K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title title-white">
+                      Fresh Vegetable Salad
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popular recipe -->
 
-	<!-- popular recipe -->
-	<div class="popular-recipe">
-		<div class="container">
-			<div class="swiper swiper-home">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<a href="recipe-details.html">
-							<div class="recipe-item">
-								<div class="saved-symbol">
-									<ion-icon name="bookmark"></ion-icon>
-								</div>
-								<div class="image-mask"></div>
-								<img src="images/porkadobo.jpg" alt="">
-								<div class="recipe-caption">
-									<ul class="recipe-statistic">
-										<li><ion-icon name="eye"></ion-icon>50K</li>
-										<li><ion-icon name="heart"></ion-icon>10K</li>
-										<li><ion-icon name="star"></ion-icon>4.5</li>
-									</ul>
-									<p class="recipe-title title-white">Grilled Meat With Sauce</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="recipe-details.html">
-							<div class="recipe-item">
-								<div class="saved-symbol">
-									<ion-icon name="bookmark"></ion-icon>
-								</div>
-								<div class="image-mask"></div>
-								<img src="images/popular-recipe2.jpg" alt="">
-								<div class="recipe-caption">
-									<ul class="recipe-statistic">
-										<li><ion-icon name="eye"></ion-icon>50K</li>
-										<li><ion-icon name="heart"></ion-icon>10K</li>
-										<li><ion-icon name="star"></ion-icon>4.5</li>
-									</ul>
-									<p class="recipe-title title-white">Crispy Chicken Thighs</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="recipe-details.html">
-							<div class="recipe-item">
-								<div class="saved-symbol">
-									<ion-icon name="bookmark"></ion-icon>
-								</div>
-								<div class="image-mask"></div>
-								<img src="images/popular-recipe3.jpg" alt="">
-								<div class="recipe-caption">
-									<ul class="recipe-statistic">
-										<li><ion-icon name="eye"></ion-icon>50K</li>
-										<li><ion-icon name="heart"></ion-icon>10K</li>
-										<li><ion-icon name="star"></ion-icon>4.5</li>
-									</ul>
-									<p class="recipe-title title-white">Fresh Vegetable Salad</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end popular recipe -->
+    <!-- spacer -->
+    <div class="spacer-block"></div>
+    <!-- end spacer -->
 
-	<!-- spacer -->
-	<div class="spacer-block"></div>
-	<!-- end spacer -->	
+    <!-- recipe from ingredients -->
+    <div class="recipe-ingredients">
+      <div class="container">
+        <div class="wrapper-inner">
+          <div class="block-title no-margin-t">
+            <h3>Recipe From Ingredients</h3>
+          </div>
+          <div class="row">
+            <div class="col s4">
+              <div class="content">
+                <img src="images/recipe-ingredient1.jpg" alt="" />
+                <p class="second-title">Chicken</p>
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="content">
+                <img src="images/recipe-ingredient2.jpg" alt="" />
+                <p class="second-title">Corn</p>
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="content">
+                <img src="images/recipe-ingredient3.jpg" alt="" />
+                <p class="second-title">Fish</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s4">
+              <div class="content">
+                <img src="images/recipe-ingredient4.jpg" alt="" />
+                <p class="second-title">Shrimp</p>
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="content">
+                <img src="images/recipe-ingredient5.jpg" alt="" />
+                <p class="second-title">Potato</p>
+              </div>
+            </div>
+            <div class="col s4">
+              <div class="content">
+                <img src="images/recipe-ingredient6.jpg" alt="" />
+                <p class="second-title">Egg</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="show-all-link-c">Show All</a>
+        </div>
+      </div>
+    </div>
+    <!-- end recipe from ingredients -->
 
-	<!-- recipe from ingredients -->
-	<div class="recipe-ingredients">
-		<div class="container">
-			<div class="wrapper-inner">
-				<div class="block-title no-margin-t">
-					<h3>Recipe From Ingredients</h3>
-				</div>
-				<div class="row">
-					<div class="col s4">
-						<div class="content">
-							<img src="images/recipe-ingredient1.jpg" alt="">
-							<p class="second-title">Chicken</p>
-						</div>
-					</div>
-					<div class="col s4">
-						<div class="content">
-							<img src="images/recipe-ingredient2.jpg" alt="">
-							<p class="second-title">Corn</p>
-						</div>
-					</div>
-					<div class="col s4">
-						<div class="content">
-							<img src="images/recipe-ingredient3.jpg" alt="">
-							<p class="second-title">Fish</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s4">
-						<div class="content">
-							<img src="images/recipe-ingredient4.jpg" alt="">
-							<p class="second-title">Shrimp</p>
-						</div>
-					</div>
-					<div class="col s4">
-						<div class="content">
-							<img src="images/recipe-ingredient5.jpg" alt="">
-							<p class="second-title">Potato</p>
-						</div>
-					</div>
-					<div class="col s4">
-						<div class="content">
-							<img src="images/recipe-ingredient6.jpg" alt="">
-							<p class="second-title">Egg</p>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="show-all-link-c">Show All</a>
-			</div>
-		</div>
-	</div>
-	<!-- end recipe from ingredients -->
+    <!-- spacer -->
+    <div class="spacer-block"></div>
+    <!-- end spacer -->
 
-	<!-- spacer -->
-	<div class="spacer-block"></div>
-	<!-- end spacer -->
+    <!-- latest recipe -->
+    <div class="latest-recipe">
+      <div class="container">
+        <div class="block-title">
+          <h3>
+            Latest Recipe <a href="#" class="show-all-link-r">Show All</a>
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <a href="recipe-details.html">
+              <div class="recipe-item">
+                <div class="saved-symbol">
+                  <ion-icon name="bookmark"></ion-icon>
+                </div>
+                <img src="images/latest-recipe1.jpg" alt="" />
+                <div class="recipe-caption bg-gradient">
+                  <ul class="recipe-statistic">
+                    <li><ion-icon name="eye"></ion-icon>50K</li>
+                    <li><ion-icon name="star"></ion-icon>4.5</li>
+                  </ul>
+                  <p class="recipe-title">Peanut Butter Cookies</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col s6">
+            <a href="recipe-details.html">
+              <div class="recipe-item">
+                <div class="saved-symbol">
+                  <ion-icon name="bookmark"></ion-icon>
+                </div>
+                <img src="images/latest-recipe2.jpg" alt="" />
+                <div class="recipe-caption bg-gradient">
+                  <ul class="recipe-statistic">
+                    <li><ion-icon name="eye"></ion-icon>50K</li>
+                    <li><ion-icon name="star"></ion-icon>4.5</li>
+                  </ul>
+                  <p class="recipe-title">Natural Grilled Meat</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6">
+            <a href="recipe-details.html">
+              <div class="recipe-item">
+                <div class="saved-symbol">
+                  <ion-icon name="bookmark"></ion-icon>
+                </div>
+                <img src="images/latest-recipe3.jpg" alt="" />
+                <div class="recipe-caption bg-gradient">
+                  <ul class="recipe-statistic">
+                    <li><ion-icon name="eye"></ion-icon>50K</li>
+                    <li><ion-icon name="star"></ion-icon>4.5</li>
+                  </ul>
+                  <p class="recipe-title">Mango Juice Fla Milk</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col s6">
+            <a href="recipe-details.html">
+              <div class="recipe-item">
+                <div class="saved-symbol">
+                  <ion-icon name="bookmark"></ion-icon>
+                </div>
+                <img src="images/latest-recipe4.jpg" alt="" />
+                <div class="recipe-caption bg-gradient">
+                  <ul class="recipe-statistic">
+                    <li><ion-icon name="eye"></ion-icon>50K</li>
+                    <li><ion-icon name="star"></ion-icon>4.5</li>
+                  </ul>
+                  <p class="recipe-title">Strawberry Butter Cake</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end latest recipe -->
 
-	<!-- latest recipe -->
-	<div class="latest-recipe">
-		<div class="container">
-			<div class="block-title">
-				<h3>Latest Recipe <a href="#" class="show-all-link-r">Show All</a></h3>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<a href="recipe-details.html">
-						<div class="recipe-item">
-							<div class="saved-symbol">
-								<ion-icon name="bookmark"></ion-icon>
-							</div>
-							<img src="images/latest-recipe1.jpg" alt="">
-							<div class="recipe-caption bg-gradient">
-								<ul class="recipe-statistic">
-									<li><ion-icon name="eye"></ion-icon>50K</li>
-									<li><ion-icon name="star"></ion-icon>4.5</li>
-								</ul>
-								<P class="recipe-title">Peanut Butter Cookies</P>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col s6">
-					<a href="recipe-details.html">
-						<div class="recipe-item">
-							<div class="saved-symbol">
-								<ion-icon name="bookmark"></ion-icon>
-							</div>
-							<img src="images/latest-recipe2.jpg" alt="">
-							<div class="recipe-caption bg-gradient">
-								<ul class="recipe-statistic">
-									<li><ion-icon name="eye"></ion-icon>50K</li>
-									<li><ion-icon name="star"></ion-icon>4.5</li>
-								</ul>
-								<P class="recipe-title">Natural Grilled Meat</P>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s6">
-					<a href="recipe-details.html">
-						<div class="recipe-item">
-							<div class="saved-symbol">
-								<ion-icon name="bookmark"></ion-icon>
-							</div>
-							<img src="images/latest-recipe3.jpg" alt="">
-							<div class="recipe-caption bg-gradient">
-								<ul class="recipe-statistic">
-									<li><ion-icon name="eye"></ion-icon>50K</li>
-									<li><ion-icon name="star"></ion-icon>4.5</li>
-								</ul>
-								<P class="recipe-title">Mango Juice Fla Milk</P>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col s6">
-					<a href="recipe-details.html">
-						<div class="recipe-item">
-							<div class="saved-symbol">
-								<ion-icon name="bookmark"></ion-icon>
-							</div>
-							<img src="images/latest-recipe4.jpg" alt="">
-							<div class="recipe-caption bg-gradient">
-								<ul class="recipe-statistic">
-									<li><ion-icon name="eye"></ion-icon>50K</li>
-									<li><ion-icon name="star"></ion-icon>4.5</li>
-								</ul>
-								<P class="recipe-title">Strawberry Butter Cake</P>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end latest recipe -->
+    <!-- spacer -->
+    <div class="spacer-block"></div>
+    <!-- end spacer -->
 
-	<!-- spacer -->
-	<div class="spacer-block"></div>
-	<!-- end spacer -->
+    <!-- call to action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="content">
+          <h4>Join a professional chef</h4>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="row">
+            <div class="col s6">
+              <div class="button">Submit</div>
+            </div>
+            <div class="col s6">
+              <div class="button button-outline">More</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end call to action -->
 
-	<!-- call to action -->
-	<div class="call-to-action">
-		<div class="container">
-			<div class="content">
-				<h4>Join a professional chef</h4>
-				<p>Lorem ipsum dolor sit amet consectetur.</p>
-				<div class="row">
-					<div class="col s6">
-						<div class="button">Submit</div>
-					</div>
-					<div class="col s6">
-						<div class="button button-outline">More</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end call to action -->
+    <!-- spacer -->
+    <div class="spacer-block"></div>
+    <!-- end spacer -->
 
-	<!-- spacer -->
-	<div class="spacer-block"></div>
-	<!-- end spacer -->
+    <!-- premium recipe -->
+    <div class="premium-recipe">
+      <div class="container">
+        <div class="block-title">
+          <h3>
+            Premium Recipe <a href="#" class="show-all-link-r">Show All</a>
+          </h3>
+        </div>
+        <div class="swiper swiper-home">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="premium-symbol">
+                    <ion-icon name="ribbon"></ion-icon>
+                  </div>
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <img src="images/premium-image1.jpg" alt="" />
+                  <div class="recipe-caption bg-gradient">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title">Special Sunny Side Up</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="premium-symbol">
+                    <ion-icon name="ribbon"></ion-icon>
+                  </div>
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <img src="images/premium-image2.jpg" alt="" />
+                  <div class="recipe-caption bg-gradient">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title">Split Grilled Prawns</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="premium-symbol">
+                    <ion-icon name="ribbon"></ion-icon>
+                  </div>
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <img src="images/premium-image3.jpg" alt="" />
+                  <div class="recipe-caption bg-gradient">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title">Spicy Fried Prawns</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="recipe-details.html">
+                <div class="recipe-item">
+                  <div class="premium-symbol">
+                    <ion-icon name="ribbon"></ion-icon>
+                  </div>
+                  <div class="saved-symbol">
+                    <ion-icon name="bookmark"></ion-icon>
+                  </div>
+                  <img src="images/premium-image4.jpg" alt="" />
+                  <div class="recipe-caption bg-gradient">
+                    <ul class="recipe-statistic">
+                      <li><ion-icon name="eye"></ion-icon>50K</li>
+                      <li><ion-icon name="star"></ion-icon>4.5</li>
+                    </ul>
+                    <p class="recipe-title">Grilled Red Tuna</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end premium recipe -->
 
-	<!-- premium recipe -->
-	<div class="premium-recipe">
-		<div class="container">
-			<div class="block-title">
-				<h3>Premium Recipe <a href="#" class="show-all-link-r">Show All</a></h3>
-			</div>
-			<div class="swiper swiper-home">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<a href="recipe-details.html">
-							<div class="recipe-item">
-								<div class="premium-symbol">
-									<ion-icon name="ribbon"></ion-icon>
-								</div>
-								<div class="saved-symbol">
-									<ion-icon name="bookmark"></ion-icon>
-								</div>
-								<img src="images/premium-image1.jpg" alt="">
-								<div class="recipe-caption bg-gradient">
-									<ul class="recipe-statistic">
-										<li><ion-icon name="eye"></ion-icon>50K</li>
-										<li><ion-icon name="star"></ion-icon>4.5</li>
-									</ul>
-									<P class="recipe-title">Special Sunny Side Up</P>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="recipe-details.html">
-							<div class="recipe-item">
-								<div class="premium-symbol">
-									<ion-icon name="ribbon"></ion-icon>
-								</div>
-								<div class="saved-symbol">
-									<ion-icon name="bookmark"></ion-icon>
-								</div>
-								<img src="images/premium-image2.jpg" alt="">
-								<div class="recipe-caption bg-gradient">
-									<ul class="recipe-statistic">
-										<li><ion-icon name="eye"></ion-icon>50K</li>
-										<li><ion-icon name="star"></ion-icon>4.5</li>
-									</ul>
-									<P class="recipe-title">Split Grilled Prawns</P>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="recipe-details.html">
-							<div class="recipe-item">
-								<div class="premium-symbol">
-									<ion-icon name="ribbon"></ion-icon>
-								</div>
-								<div class="saved-symbol">
-									<ion-icon name="bookmark"></ion-icon>
-								</div>
-								<img src="images/premium-image3.jpg" alt="">
-								<div class="recipe-caption bg-gradient">
-									<ul class="recipe-statistic">
-										<li><ion-icon name="eye"></ion-icon>50K</li>
-										<li><ion-icon name="star"></ion-icon>4.5</li>
-									</ul>
-									<P class="recipe-title">Spicy Fried Prawns</P>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a href="recipe-details.html">
-							<div class="recipe-item">
-								<div class="premium-symbol">
-									<ion-icon name="ribbon"></ion-icon>
-								</div>
-								<div class="saved-symbol">
-									<ion-icon name="bookmark"></ion-icon>
-								</div>
-								<img src="images/premium-image4.jpg" alt="">
-								<div class="recipe-caption bg-gradient">
-									<ul class="recipe-statistic">
-										<li><ion-icon name="eye"></ion-icon>50K</li>
-										<li><ion-icon name="star"></ion-icon>4.5</li>
-									</ul>
-									<P class="recipe-title">Grilled Red Tuna</P>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end premium recipe -->
+    <!-- spacer -->
+    <div class="spacer-block"></div>
+    <!-- end spacer -->
 
-	<!-- spacer -->
-	<div class="spacer-block"></div>
-	<!-- end spacer -->
+    <!-- blog -->
+    <div class="blog">
+      <div class="container">
+        <div class="block-title">
+          <h3>
+            Our Latest Blog
+            <a href="recipe-list.html" class="show-all-link-r">Show All</a>
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="content">
+              <img src="images/blog1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col s8">
+            <div class="content">
+              <span class="text-small">Tips & Trick</span>
+              <h4>The right way to cook vegetables</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="content">
+              <img src="images/blog2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col s8">
+            <div class="content">
+              <span class="text-small">Tips & Trick</span>
+              <h4>Good and precise technique for cutting tuna</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="content">
+              <img src="images/blog3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col s8">
+            <div class="content">
+              <span class="text-small">Tips & Trick</span>
+              <h4>How to wash fruit properly and cleanly</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end blog -->
 
-	<!-- blog -->
-	<div class="blog">
-		<div class="container">
-			<div class="block-title">
-				<h3>Our Latest Blog <a href="recipe-list.html" class="show-all-link-r">Show All</a></h3>
-			</div>
-			<div class="row">
-				<div class="col s4">
-					<div class="content">
-						<img src="images/blog1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col s8">
-					<div class="content">
-						<span class="text-small">Tips & Trick</span>
-						<h4>The right way to cook vegetables</h4>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s4">
-					<div class="content">
-						<img src="images/blog2.jpg" alt="">
-					</div>
-				</div>
-				<div class="col s8">
-					<div class="content">
-						<span class="text-small">Tips & Trick</span>
-						<h4>Good and precise technique for cutting tuna</h4>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col s4">
-					<div class="content">
-						<img src="images/blog3.jpg" alt="">
-					</div>
-				</div>
-				<div class="col s8">
-					<div class="content">
-						<span class="text-small">Tips & Trick</span>
-						<h4>How to wash fruit properly and cleanly</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end blog -->
+    <!-- spacer -->
+    <div class="spacer-block spacer-bottom"></div>
+    <!-- end spacer -->
 
-	<!-- spacer -->
-	<div class="spacer-block spacer-bottom"></div>
-	<!-- end spacer -->
+    <!-- toolbar bottom -->
+    <div class="toolbar">
+      <div class="container">
+        <ul class="toolbar-bottom toolbar-wrap">
+          <li class="toolbar-item">
+            <a href="index.html" class="toolbar-link toolbar-link-active">
+              <ion-icon name="home-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="toolbar-item">
+            <a href="searchbar.html" class="toolbar-link">
+              <ion-icon name="search-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="toolbar-item toolbar-add">
+            <a href="add-recipe.html" class="toolbar-link">
+              <ion-icon name="add-circle"></ion-icon>
+            </a>
+          </li>
+          <li class="toolbar-item">
+            <a href="saved-recipe.html" class="toolbar-link">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="toolbar-item">
+            <a href="profile.html" class="toolbar-link">
+              <ion-icon name="person-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end toolbar bottom -->
 
-	<!-- toolbar bottom -->
-	<div class="toolbar">
-		<div class="container">
-			<ul class="toolbar-bottom toolbar-wrap">
-				<li class="toolbar-item">
-					<a href="index.html" class="toolbar-link toolbar-link-active">
-						<ion-icon name="home-outline"></ion-icon>
-					</a>
-				</li>
-				<li class="toolbar-item">
-					<a href="searchbar.html" class="toolbar-link">
-						<ion-icon name="search-outline"></ion-icon>
-					</a>
-				</li>
-				<li class="toolbar-item toolbar-add">
-					<a href="add-recipe.html" class="toolbar-link">
-						<ion-icon name="add-circle"></ion-icon>
-					</a>
-				</li>
-				<li class="toolbar-item">
-					<a href="saved-recipe.html" class="toolbar-link">
-						<ion-icon name="bookmark-outline"></ion-icon>
-					</a>
-				</li>
-				<li class="toolbar-item">
-					<a href="profile.html" class="toolbar-link">
-						<ion-icon name="person-outline"></ion-icon>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!-- end toolbar bottom -->
-
-	<script src="js/jquery-3.7.1.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-	<script src="js/swiper-bundle.min.js"></script>
-	<script src="js/main.js"></script>
-
-
-</body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
